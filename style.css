@@ -1,0 +1,13 @@
+.divs1{
+    background-color: rgb(226, 187, 226);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divs2{
+    background-color: rgb(226, 187, 226);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
