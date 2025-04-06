@@ -1,0 +1,35 @@
+.em {
+    display: flex;
+    color: darkcyan;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    width: 101px;
+    height: 20px;
+}
+
+.om {
+    color: darkcyan;
+    text-decoration: none;
+    display: flex;
+}
+
+.ar {
+    color: darkcyan;
+    text-decoration: none;
+    display: flex;
+}
+
+.purple_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+
+}
+
+img{
+    height: 100%;
+}
+
+.purple {
+    margin-bottom: 30px;
+}
