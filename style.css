@@ -1,20 +1,38 @@
 td{
     align-content: space-around;
     border-radius: 5px;
-    background-color: blue;
+    background-color: #7f6a93;
+    width: 30%;
+    height: 20%;
 }
 .table1{
     border: 1px solid black;
     border-radius: 5px;
-
+    width: 100%;
+    height: 100%;
     color: aliceblue;
 }
 a{
  font-size: 20px;
  color: white;
- text-decoration: none;   
+ text-decoration: none;  
+ padding: 10px; 
 }
 body{
     background-color: darkslateblue;
     
+}
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.dive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 80vh;
+margin: 0 auto;
 }
