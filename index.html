@@ -5,7 +5,47 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
+    <div class="cover">
+      <nav>
+        <div class='nav-item menu'>
+          <img src="burger 1.png" class="burger">
+          <ul class="about-menu">
+            <li class="spisok">
+              <a href="" class="link" tabindex="-1">3</a>
+            </li>
+            <li class="spisok">
+              <a href="" class="link" tabindex="-1">2</a>
+            </li>
+            <li class="spisok">
+              <a href="" class="link" tabindex="-1">1</a>
+            </li>
+          </ul>
+        </div>
+        <div class="shapka">
+          <div class='nav-item' onclick="document.getElementById('why').scrollIntoView({behavior: 'smooth'});">Почему</div>
+          <div class='nav-item' onclick="document.getElementById('forwhat').scrollIntoView({behavior: 'smooth'});">Зачем</div>
+          <div class='nav-item' onclick="document.getElementById('for').scrollIntoView({behavior: 'smooth'});">Для чего</div>
+          <div class='nav-item' onclick="document.getElementById('how').scrollIntoView({behavior: 'smooth'});">Как</div>
+        </div>
+      </nav>
+      <div class="main-but">начать тестирование</div>
+    </div>
+  <div class="question" id="why">
+    <h1>Почему</h1>
+    <p>Текст</p>
+  </div>
+  <div class="question" id="forwhat">
+    <h1>Зачем</h1>
+    <p>Текст</p>
+  </div>
+  <div class="question" id="for">
+    <h1>Для чего</h1>
+    <p>Текст</p>
+  </div>
+  <div class="question" id="how">
+    <h1>Как</h1>
+    <p>Текст</p>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>
