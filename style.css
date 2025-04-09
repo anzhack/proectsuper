@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav {
+    width: 100vw;
+    padding: 1em 0 1em;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+}
+.shapka {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-menu {
+    display: none;
+}
+.cover {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
