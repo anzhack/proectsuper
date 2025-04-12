@@ -18,10 +18,26 @@ nav {
 .about-menu {
     display: none;
 }
+body {
+    background-image: url("Group 5.svg");
+    background-size: cover;
+}
 .cover {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url();
+}
+.question {
+    height: 50vh;
+}
+.main-but {
+    position: fixed;
+    top: 70%;
+    left: 47%;
+}
+.menu {
+    margin: 5px;
 }
