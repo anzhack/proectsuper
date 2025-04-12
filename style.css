@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-around;
     height: 50vh;
-
+    
 }
 
 img{
@@ -31,5 +31,58 @@ img{
 }
 
 .purple {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.green_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.blue_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.yelloy_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.green {
+    margin-bottom: 50px;
+}
+
+.blue {
+    margin-bottom: 50px;
+}
+
+.maze-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.wall {
+    background-color: rgb(222, 194, 12);
+}
+.player {
+    background-color: #ff0000;
 }
