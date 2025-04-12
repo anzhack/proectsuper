@@ -4,6 +4,7 @@ td{
     background-color: #7f6a93;
     width: 30%;
     height: 20%;
+    padding: 20px;
 }
 .table1{
     border: 1px solid black;
@@ -16,7 +17,7 @@ a{
  font-size: 20px;
  color: white;
  text-decoration: none;  
- padding: 10px; 
+
 }
 body{
     background-color: darkslateblue;
@@ -36,3 +37,4 @@ h1{
     height: 80vh;
 margin: 0 auto;
 }
+
