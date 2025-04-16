@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap');
 *{
     padding: 0;
     margin: 0;
+    font-family: "Zen Kaku Gothic New";
+    word-spacing: 1px;
 }
 nav {
     width: 100vw;
@@ -9,6 +12,7 @@ nav {
     display: flex;
     justify-content: space-between;
     /* box-sizing: border-box; */
+    font-family: "Comfortaa";
 }
 .shapka {
     width: 80%;
@@ -36,7 +40,21 @@ body {
 .main-but {
     position: fixed;
     top: 70%;
-    left: 47%;
+    left: 40%;
+    font-family: "Comfortaa";
+    font-weight: 700;
+    font-size: 24px;
+    padding: .8em;
+    border: 2.7px solid #7F6A93;
+    background-color: white;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.main-but:hover {
+    /* box-shadow: 5px 5px 10px #7F6A93; */
+    background-color: #7F6A93;
+    color: white;
+    transition: all 0.5s;
 }
 .menu {
     margin: 5px;
