@@ -13,6 +13,7 @@ nav {
     justify-content: space-between;
     /* box-sizing: border-box; */
     font-family: "Comfortaa";
+    
 }
 .shapka {
     width: 80%;
@@ -58,4 +59,22 @@ body {
 }
 .menu {
     margin: 5px;
+}
+.question {
+    font-family: "Comfortaa";
+    font-weight: 700;
+}
+.nav-item {
+    padding: .5em 20px;
+    border: 1.7px solid #7F6A93;
+    border-radius: 8px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.nav-item:hover {
+    background-color: #7F6A93;
+    color: white;
+    transition: all 0.5s;
 }
