@@ -95,6 +95,9 @@ main{
      margin: 10px;
      padding: 10px;
 }
+.var:hover{
+    background-color: aqua;
+}
 h2{
     margin-bottom: 70px;
     text-align: center;
