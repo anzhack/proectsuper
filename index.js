@@ -10,6 +10,12 @@ var2.addEventListener('click', function() {
     var2.querySelector('input').checked = true
     otveti.push('v2')
 })
+class Var{
+    constructor(text, letter){
+        this.text = text
+        this.letter = letter
+    }
+}
 class Quest {
     constructor(question, var1, var2) {
        this.question=question
@@ -17,3 +23,14 @@ class Quest {
        this.var2 = var2
     }  
  }
+
+let questions =[]
+questions.push(new Quest(1, new Var('Ухаживать за животными', "П"), new Var('Обслуживать машины', "Т")))
+questions.push(new Quest(2, new Var('Помогать больным людям, лечить их', "Ч"), new Var('Составлять таблицы, схемы, программы для вычислительных машин', "З")))
+// questions.forEach(question =>{
+    console.log(questions)
+console.log(questions[0])
+let quest_number = 1
+var1.querySelector('label').innerHTML = questions[quest_number].var1.text
+var2.querySelector('label').innerHTML = questions[quest_number].var2.text
+// })
