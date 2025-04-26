@@ -1,3 +1,5 @@
+import {Character} from './characters.js'
+console.log(Character)
 const mazeElement = document.getElementById('maze');
 const maze = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],

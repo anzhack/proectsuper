@@ -7,6 +7,15 @@
     height: 20px;
 }
 
+.mu {
+    display: flex;
+    color: darkcyan;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    width: 101px;
+    height: 20px;
+}
+
 .om {
     color: darkcyan;
     text-decoration: none;
