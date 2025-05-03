@@ -1,4 +1,8 @@
 let Filtr = 1
+// export let PROF = ''
+// export let OPIS = ''
+let PROF = ''
+let OPIS = ''
 class Prof{
     constructor(ad,aa,ab){
         this.profname = ad;
@@ -20,7 +24,7 @@ profs.push(new Prof('архитектор','Специалист по проек
 profs.push(new Prof('логист','Специалист по управлению процессами доставки товаров от производителя к потребителю. Логисты занимаются планированием маршрутов, управлением запасами и оптимизацией цепочек поставок.',1))
 let fillprof = []
 for (let i = 0; i < profs.length; i+= 1){
-    prof = profs[i]
+    let prof = profs[i]
     if(prof.fil == Filtr){
         fillprof.push(prof)
         
@@ -33,11 +37,24 @@ let opiss = document.querySelectorAll('.opis')
 
 for (let i = 0; i < profs.length; i+= 1){
     
-    prof = fillprof[i]
+    let prof = fillprof[i]
 
     
     prif [i].innerHTML = prof.profname
     opiss [i].innerHTML = prof.descr
 
+    PROF = prof.profname
+    OPIS = prof.descr
+    prif[i].addEventListener('click',function() {show_prof(prif[i])})
+    // opiss[i].addEventListener('click',show_prof)
+}
+
+function show_prof(prif){
+
+    prif.setAttribute ("href", 'PROF.html')
+    prif.click()
+    let hh1 = document.querySelector('.hh')
+    let pp1 = document.querySelector('.pp')
+    hh1.innerHTML = '1'
 
 }
