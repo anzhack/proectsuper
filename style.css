@@ -37,6 +37,11 @@ body {
 }
 .question {
     height: 50vh;
+
+}
+
+.question p{
+    width: 30vw;
 }
 .main-but {
     position: fixed;
