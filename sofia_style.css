@@ -1,0 +1,97 @@
+.em {
+    display: flex;
+    color: darkcyan;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    width: 101px;
+    height: 20px;
+}
+
+.mu {
+    display: flex;
+    color: darkcyan;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    width: 101px;
+    height: 20px;
+}
+
+.om {
+    color: darkcyan;
+    text-decoration: none;
+    display: flex;
+}
+
+.ar {
+    color: darkcyan;
+    text-decoration: none;
+    display: flex;
+}
+
+.purple_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    
+}
+
+img{
+    height: 100%;
+}
+
+.purple {
+    margin-bottom: 50px;
+}
+
+.green_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.blue_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.yelloy_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.green {
+    margin-bottom: 50px;
+}
+
+.blue {
+    margin-bottom: 50px;
+}
+
+.maze-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(12, 30px);
+    grid-template-rows: repeat(12, 30px);
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(75, 12, 222, 0.759);
+}
+.wall {
+    background-color: rgba(75, 12, 222, 0.759);
+}
+.player {
+    background-color: #00ffb78d;
+}
