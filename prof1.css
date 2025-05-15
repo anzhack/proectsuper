@@ -13,7 +13,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 40vw;
-    height: 40vh;
+    height: 30vh;
     margin: 0 auto;
     flex-direction: column;
     border: 1px solid black;
@@ -57,7 +57,7 @@ td{
     align-items: center;
     justify-content: center;
     width: 80vw;
-    height: 50vh;
+    height: 40vh;
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 20px;

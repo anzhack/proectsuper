@@ -27,7 +27,9 @@ h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 700;    
+    font-weight: 700;   
+    text-decoration: none;
+    color: #000; 
 }
 .divs1{
     display: flex;
@@ -97,6 +99,10 @@ main{
 }
 .var:hover{
     background-color: aqua;
+}
+
+.results {
+    display: none;
 }
 h2{
     margin-bottom: 70px;

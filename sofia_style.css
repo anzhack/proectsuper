@@ -3,8 +3,29 @@
     color: darkcyan;
     text-decoration: none;
     border: 1px solid darkcyan;
-    width: 101px;
-    height: 20px;
+    /* width: 101px; */
+    /* height: 20px; */
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+    font-size: 20px;
+}
+
+.characters {
+    display: none;
+}
+.char {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.char:hover {
+    opacity: 1;
+}
+
+.em:hover {
+    background-color: darkcyan;
+    color: white;
 }
 
 .mu {
@@ -70,28 +91,40 @@ img{
 }
 
 .maze-div {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+.maze-div button {
+    align-self: self-start;
+   
 }
 
 
 #maze {
     display: grid;
-    grid-template-columns: repeat(12, 30px);
-    grid-template-rows: repeat(12, 30px);
+    grid-template-columns: repeat(12, 55px);
+    grid-template-rows: repeat(12, 55px);
 }
 .cell {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     border: 1px solid rgba(75, 12, 222, 0.759);
 }
 .wall {
     background-color: rgba(75, 12, 222, 0.759);
 }
 .player {
-    background-color: #00ffb78d;
+    background-color: #ffffff8d;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+
+
+

@@ -2,6 +2,8 @@ let var1 = document.querySelector('.var1')
 let var2 = document.querySelector('.var2')
 let nav1 = document.querySelector('.nav1')
 let nav2 = document.querySelector('.nav2')
+let results = document.querySelector('.results')
+let main = document.querySelector('main')
 let otveti =[]
 class Var{
     constructor(text, letter){
@@ -36,13 +38,20 @@ function AskQuest(question){
     var2.querySelector('label').innerHTML = question.var2.text
     var1.querySelector('input').checked = false
     var2.querySelector('input').checked = false
-    
+
 }
 
 function NextQuest(){
     quest_number+=1
     if (quest_number<questions.length){
         AskQuest(questions[quest_number])
+    } else {
+        if (otveti.some(otvet => {
+            return otvet != ''
+          })){
+                results.style.display = 'block'
+                main.style.display = 'none'
+          }
     }
     
 }
@@ -72,8 +81,15 @@ var1.addEventListener('click', function() {
         if (quest_number<questions.length){
             
         setTimeout(function(){
-            console.log('l')
             AskQuest(questions[quest_number])}, 1000)
+        }
+        else {
+            if (otveti.some(otvet => {
+                return otvet != ''
+              })){
+                    results.style.display = 'block'
+                    main.style.display = 'none'
+              }
         }
 
     })
@@ -90,8 +106,16 @@ var1.addEventListener('click', function() {
         if (quest_number<questions.length){
             
             setTimeout(function(){
-                console.log('l')
-                AskQuest(questions[quest_number])}, 1000)
-            }
+                AskQuest(questions[quest_number])
+            }, 1000)
+        }
+        else {
+            if (otveti.some(otvet => {
+                return otvet != ''
+              })){
+                    results.style.display = 'block'
+                    main.style.display = 'none'
+              }
+        }
 
     })

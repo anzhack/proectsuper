@@ -3,6 +3,9 @@ let Filtr = 1
 // export let OPIS = ''
 let PROF = ''
 let OPIS = ''
+let fon = document.querySelector('.fon')
+let dive = document.querySelector('.dive')
+
 class Prof{
     constructor(ad,aa,ab){
         this.profname = ad;
@@ -45,16 +48,23 @@ for (let i = 0; i < profs.length; i+= 1){
 
     PROF = prof.profname
     OPIS = prof.descr
-    prif[i].addEventListener('click',function() {show_prof(prif[i])})
+    prif[i].addEventListener('click',function() {
+        show_prof(prif[i])
+    })
     // opiss[i].addEventListener('click',show_prof)
 }
 
 function show_prof(prif){
 
-    prif.setAttribute ("href", 'PROF.html')
-    prif.click()
+    // prif.setAttribute ("href", 'PROF.html')
+    // prif.click()
     let hh1 = document.querySelector('.hh')
     let pp1 = document.querySelector('.pp')
-    hh1.innerHTML = '1'
+    hh1.innerHTML = PROF
+    pp1.innerHTML = OPIS
+    dive.style.display = 'none'
+    fon.style.display = 'block'
+
+
 
 }
