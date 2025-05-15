@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Zen Kaku Gothic New";
+    word-spacing: 1px;
+}
+nav {
+    width: 100vw;
+    padding: 1em 0 1em;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+    font-family: "Comfortaa";
+    
+}
+.shapka {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-menu {
+    /* display: none; */
+    /* position: absolute;
+    top: 80px; */
+    /* background-color: white; */
+    list-style-type: none;
+
+}
+body {
+    background-image: url("Group 5.svg");
+    background-size: cover;
+}
+.cover {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url();
+}
+.question {
+    height: 50vh;
+
+}
+
+.question p{
+    width: 30vw;
+}
+.main-but {
+    position: fixed;
+    top: 70%;
+    left: 40%;
+    font-family: "Comfortaa";
+    font-weight: 700;
+    font-size: 24px;
+    padding: .8em;
+    border: 2.7px solid #7F6A93;
+    background-color: white;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+.main-but:hover {
+    /* box-shadow: 5px 5px 10px #7F6A93; */
+    background-color: #7F6A93;
+    color: white;
+    transition: all 0.5s;
+}
+.menu {
+    margin: 5px;
+    
+}
+
+.spisok {
+    color: #7F6A93;
+}
+
+.spisok a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 5px;
+    /* background-color: white; */
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    
+    /* border: 1.7px solid #7F6A93; */
+
+}
+
+.about_menu_div {
+    display:none;
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    width: max-content;
+    left: 3px;
+    border: 1.7px solid #7F6A93;
+    border-radius: 5px;
+
+
+}
+
+.question {
+    font-family: "Comfortaa";
+    font-weight: 700;
+}
+.nav-item {
+    padding: .5em 20px;
+    border: 1.7px solid #7F6A93;
+    border-radius: 8px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.nav-item:hover, .spisok a:hover {
+    background-color: #7F6A93;
+    color: white;
+    transition: all 0.5s;
+}
+
+.main-but a{
+    color: inherit;
+    text-decoration: none;
+}

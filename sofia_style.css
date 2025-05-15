@@ -1,0 +1,130 @@
+.em {
+    display: flex;
+    color: darkcyan;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    /* width: 101px; */
+    /* height: 20px; */
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+    font-size: 20px;
+}
+
+.characters {
+    display: none;
+}
+.char {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.char:hover {
+    opacity: 1;
+}
+
+.em:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.mu {
+    display: flex;
+    color: darkcyan;
+    text-decoration: none;
+    border: 1px solid darkcyan;
+    width: 101px;
+    height: 20px;
+}
+
+.om {
+    color: darkcyan;
+    text-decoration: none;
+    display: flex;
+}
+
+.ar {
+    color: darkcyan;
+    text-decoration: none;
+    display: flex;
+}
+
+.purple_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    
+}
+
+img{
+    height: 100%;
+}
+
+.purple {
+    margin-bottom: 50px;
+}
+
+.green_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.blue_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.yelloy_char {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.green {
+    margin-bottom: 50px;
+}
+
+.blue {
+    margin-bottom: 50px;
+}
+
+.maze-div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+.maze-div button {
+    align-self: self-start;
+   
+}
+
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(12, 55px);
+    grid-template-rows: repeat(12, 55px);
+}
+.cell {
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(75, 12, 222, 0.759);
+}
+.wall {
+    background-color: rgba(75, 12, 222, 0.759);
+}
+.player {
+    background-color: #ffffff8d;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+

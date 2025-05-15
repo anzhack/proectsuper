@@ -2,6 +2,52 @@
 <html>
   <head>
     <title></title>
+    <link rel="stylesheet" href="poli_style.css">
   </head>
-  <body></body>
+  <body>
+    <div class="cover">
+      <nav>
+        <div class='nav-item menu'>
+          <img src="burger 1.png" class="burger">
+          <div class="about_menu_div">
+            <ul class="about-menu">
+              <li class="spisok">
+                <a href="tests.html" class="link" tabindex="-1">тесты</a>
+              </li>
+              <li class="spisok">
+                <a href="profs.html" class="link" tabindex="-1">профессии</a>
+              </li>
+              <li class="spisok">
+                <a href="mbti.html" class="link" tabindex="-1">MBTI</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="shapka">
+          <div class='nav-item' onclick="document.getElementById('why').scrollIntoView({behavior: 'smooth'});">почему мы</div>
+          <div class='nav-item' onclick="document.getElementById('forwhat').scrollIntoView({behavior: 'smooth'});">зачем</div>
+          <div class='nav-item' onclick="document.getElementById('for').scrollIntoView({behavior: 'smooth'});">для чего</div>
+          <div class='nav-item' onclick="document.getElementById('how').scrollIntoView({behavior: 'smooth'});">как</div>
+        </div>
+      </nav>
+      <div class="main-but"><a href="test.html">начать тестирование</a></div>
+    </div>
+  <div class="question" id="why">
+    <h1>Почему мы</h1>
+    <p>Мы сводим все данные воедино, для более целостного понимания ваших личностных характеристик. Выберите нас, выберите себя.</p>
+  </div>
+  <div class="question" id="forwhat">
+    <h1>Зачем</h1>
+    <p>Зачем лучше узнавать себя? Более целостное понимание своих особенностей позволит реалистичней выбирать цели и осваивать навыки.</p>
+  </div>
+  <div class="question" id="for">
+    <h1>Для чего</h1>
+    <p>Мы стараемся для того, что бы улучшить наш тест, тем самым улучшить ваше представление о вашем будущем.</p>
+  </div>
+  <div class="question" id="how">
+    <h1>Как</h1>
+    <p>Для достижения ваших и наших целей мы используем только проверенные методики дипломированных специалистов.</p>
+  </div>
+    <script src="poli_index.js"></script>
+  </body>
 </html>
