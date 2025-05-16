@@ -49,7 +49,7 @@ for (let i = 0; i < profs.length; i+= 1){
     PROF = prof.profname
     OPIS = prof.descr
     prif[i].addEventListener('click',function() {
-        show_prof(prif[i])
+        show_prof(i)
     })
     // opiss[i].addEventListener('click',show_prof)
 }
@@ -57,7 +57,11 @@ for (let i = 0; i < profs.length; i+= 1){
 function show_prof(prif){
 
     // prif.setAttribute ("href", 'PROF.html')
+    let prof = fillprof[prif]
     // prif.click()
+
+    PROF = prof.profname
+    OPIS = prof.descr
     let hh1 = document.querySelector('.hh')
     let pp1 = document.querySelector('.pp')
     hh1.innerHTML = PROF
