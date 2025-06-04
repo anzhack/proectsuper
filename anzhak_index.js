@@ -1,4 +1,4 @@
- let var1 = document.querySelector('.var1')
+let var1 = document.querySelector('.var1')
 let var2 = document.querySelector('.var2')
 let nav1 = document.querySelector('.nav1')
 let nav2 = document.querySelector('.nav2')
@@ -85,6 +85,38 @@ function PrevQuest(){
 nav1.addEventListener('click', PrevQuest)
 
 AskQuest(questions[quest_number])
+
+function CountResults(){
+    let hp=0
+    let ht=0
+    let hh=0
+    let hz=0
+    let hart=0
+    otveti.forEach(element => {
+        if (element == 'П'){
+            hp++
+        } else if(element =='Т'){
+            ht++
+        }else if(element =='Ч'){
+            hh++
+        }else if(element=='З'){
+            hz++
+        }else if(element=='Х'){
+            hart++
+        }
+    });
+    let massive = querySelectorAll('.result') 
+    let massiveLetters =[hp,ht,hh,hz,hart]
+    massiveLetters.sort( (a, b) => a - b )
+    let currentElement =0
+    massiveLetters.forEach(element,i => {
+        if(element==hp){
+            currentElement='П'
+        }
+
+    });
+}  
+
 // NextQuest()
 var1.addEventListener('click', function() {
         var1.querySelector('input').checked = true 
