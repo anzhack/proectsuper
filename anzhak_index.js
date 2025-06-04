@@ -1,4 +1,4 @@
-let var1 = document.querySelector('.var1')
+ let var1 = document.querySelector('.var1')
 let var2 = document.querySelector('.var2')
 let nav1 = document.querySelector('.nav1')
 let nav2 = document.querySelector('.nav2')
