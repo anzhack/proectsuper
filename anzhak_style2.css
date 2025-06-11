@@ -101,9 +101,22 @@ main{
     background-color: aqua;
 }
 
-.results {
+.allResults {
+    text-align: center;
     /* display: none; */
 }
+
+.howmach{
+    border: 1px solid;
+    border-radius: 15px;
+}
+.conclusion{
+    
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+
 h2{
     margin-bottom: 70px;
     text-align: center;
