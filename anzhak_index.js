@@ -145,6 +145,20 @@ function CountResults(){
             div.innerHTML=`<h1>${a[key].title}</h1><p class="conclusion">${a[key].descr}</p>`
 
         }
+        else if (results_dict[key]>=3 && results_dict[key]<=6){
+            let div = document.createElement('div')
+            div.classList.add('result')
+            mid.appendChild(div)
+            div.innerHTML=`<h1>${a[key].title}</h1><p class="conclusion">${a[key].descr}</p>`
+
+        }
+        else if (results_dict[key]>=0 && results_dict[key]<=2){
+            let div = document.createElement('div')
+            div.classList.add('result')
+            low.appendChild(div)
+            div.innerHTML=`<h1>${a[key].title}</h1><p class="conclusion">${a[key].descr}</p>`
+
+        }
     }
 }  
 
