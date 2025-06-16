@@ -87,35 +87,65 @@ nav1.addEventListener('click', PrevQuest)
 AskQuest(questions[quest_number])
 
 function CountResults(){
-    let hp=0
-    let ht=0
-    let hh=0
-    let hz=0
-    let hart=0
+    // let hp=0
+    // let ht=0
+    // let hh=0
+    // let hz=0
+    // let hart=0
+    let results_dict = {
+        hp:0,
+        ht:0,
+        hh:0,
+        hz:0,
+        hart:0
+    }
+    let a={
+        hp:{
+            title:'"Человек-Природа"(ЧП)',
+            descr:'flkvnrjv'
+        },
+        ht:{
+            title:'"Человек-Техника"(ЧТ)',
+            descr:'flkvnrjv'
+        },
+        hh:{
+            title:'"Человек-Человек"(ЧЧ)',
+            descr:'flkvnrjv'
+        },
+        hz:{
+            title:'"Человек-Знак"(ЧЗ)',
+            descr:'flkvnrjv'
+        },
+        hart:{
+            title:'"Человек-Художественный образ"(ЧХ)',
+            descr:'flkvnrjv'
+        }
+    }
     otveti.forEach(element => {
         if (element == 'П'){
-            hp++
+            results_dict.hp++
         } else if(element =='Т'){
-            ht++
+            results_dict.ht++
         }else if(element =='Ч'){
-            hh++
+            results_dict.hh++
         }else if(element=='З'){
-            hz++
+            results_dict.hz++
         }else if(element=='Х'){
-            hart++
+            results_dict.hart++
         }
     });
-    let massive = querySelectorAll('.result') 
-    let massiveLetters =[hp,ht,hh,hz,hart]
-    massiveLetters.sort( (a, b) => a - b )
-    let currentElement = 0
-    massiveLetters.forEach(element, i => {
-        if(element==hp){
-            currentElement='П'
+    let hard = document.querySelector('.hard')
+    let mid = document.querySelector('.mid')
+    let low = document.querySelector('.low')
+    for (key in results_dict){
+        if(results_dict[key]>=7 && results_dict[key]<=8 ){
+            let div = document.createElement('div')
+            div.classList.add('result')
+            hard.appendChild(div)
+            div.innerHTML=`<h1>${a[key].title}</h1><p class="conclusion">${a[key].descr}</p>`
+
         }
-
-
-    });
+    }
 }  
 
 // NextQuest()
@@ -139,6 +169,7 @@ var1.addEventListener('click', function() {
             if (otveti.some(otvet => {
                 return otvet != ''
               })){
+                    CountResults()
                     results.style.display = 'block'
                     main.style.display = 'none'
               }
@@ -165,6 +196,7 @@ var1.addEventListener('click', function() {
             if (otveti.some(otvet => {
                 return otvet != ''
               })){
+                    CountResults()
                     results.style.display = 'block'
                     main.style.display = 'none'
               }
