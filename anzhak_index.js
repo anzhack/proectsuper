@@ -108,11 +108,12 @@ function CountResults(){
     let massive = querySelectorAll('.result') 
     let massiveLetters =[hp,ht,hh,hz,hart]
     massiveLetters.sort( (a, b) => a - b )
-    let currentElement =0
-    massiveLetters.forEach(element,i => {
+    let currentElement = 0
+    massiveLetters.forEach(element, i => {
         if(element==hp){
             currentElement='П'
         }
+
 
     });
 }  
