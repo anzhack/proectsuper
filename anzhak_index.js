@@ -53,6 +53,7 @@ let quest_number = 0
 // })
 
 function AskQuest(question){
+    console.log(quest_number)
     var1.querySelector('label').innerHTML = question.var1.text
     var2.querySelector('label').innerHTML = question.var2.text
     var1.querySelector('input').checked = false
@@ -61,15 +62,26 @@ function AskQuest(question){
 }
 
 function NextQuest(){
+    var1.querySelector('input').checked = false
+    var2.querySelector('input').checked = false
     quest_number+=1
     if (quest_number<questions.length){
+        console.log(otveti)
         AskQuest(questions[quest_number])
+        if (otveti[quest_number]==questions[quest_number].var1.letter){
+            var1.querySelector('input').checked = true 
+        } else if (otveti[quest_number]==questions[quest_number].var2.letter) {
+            var2.querySelector('input').checked = true 
+        }
+        console.log(otveti)
+
     } else {
         if (otveti.some(otvet => {
             return otvet != ''
           })){
                 results.style.display = 'block'
                 main.style.display = 'none'
+                CountResults()
           }
     }
     
@@ -77,9 +89,18 @@ function NextQuest(){
 nav2.addEventListener('click', NextQuest)
 
 function PrevQuest(){
+    console.log(otveti)
+
     quest_number-=1
     if (quest_number<questions.length){
         AskQuest(questions[quest_number])
+        if (otveti[quest_number]==questions[quest_number].var1.letter){
+            var1.querySelector('input').checked = true 
+        } else if (otveti[quest_number]==questions[quest_number].var2.letter) {
+            var2.querySelector('input').checked = true 
+        }
+    } else {
+        quest_number += 1
     }
 }
 nav1.addEventListener('click', PrevQuest)
@@ -165,55 +186,64 @@ function CountResults(){
 // NextQuest()
 var1.addEventListener('click', function() {
         var1.querySelector('input').checked = true 
+        if (var1.querySelector('input').checked){
         // if(otveti.length-1==quest_number){
-            otveti[quest_number]=questions[quest_number].var1.letter
+            if (quest_number<questions.length){
+            otveti[quest_number]=questions[quest_number].var1.letter}
+        }
+        var1.querySelector('input').checked = false 
+
         // }
         // else{
         //     otveti.push(questions[quest_number].var1.letter)
         // }
 
-        console.log(otveti)
-        quest_number+=1
-        if (quest_number<questions.length){
+        console.log('f')
+        // quest_number+=1
+        // if (quest_number<questions.length){
             
-        setTimeout(function(){
-            AskQuest(questions[quest_number])}, 1000)
-        }
-        else {
-            if (otveti.some(otvet => {
-                return otvet != ''
-              })){
-                    CountResults()
-                    results.style.display = 'block'
-                    main.style.display = 'none'
-              }
-        }
+        // setTimeout(function(){
+            // AskQuest(questions[quest_number])}
+            // , 1000)
+        // }
+        // else {
+        //     if (otveti.some(otvet => {
+        //         return otvet != ''
+        //       })){
+        //             CountResults()
+        //             results.style.display = 'block'
+        //             main.style.display = 'none'
+        //       }
+        // }
 
+        NextQuest()
     })
     var2.addEventListener('click', function() {
         var2.querySelector('input').checked = true
         // if(otveti.length-1==quest_number){
+            if (quest_number<questions.length){
             otveti[quest_number]=questions[quest_number].var2.letter
-        // }
+        }
         // else{
         //     otveti.push(questions[quest_number].var2.letter)
         // }
-        console.log(otveti)
-        quest_number+=1
-        if (quest_number<questions.length){
+        console.log('d')
+        // quest_number+=1
+        // if (quest_number<questions.length){
             
-            setTimeout(function(){
-                AskQuest(questions[quest_number])
-            }, 1000)
-        }
-        else {
-            if (otveti.some(otvet => {
-                return otvet != ''
-              })){
-                    CountResults()
-                    results.style.display = 'block'
-                    main.style.display = 'none'
-              }
-        }
+        //     setTimeout(function(){
+        //         AskQuest(questions[quest_number])
+        //     }, 1000)
+        // }
+        // else {
+        //     if (otveti.some(otvet => {
+        //         return otvet != ''
+        //       })){
+        //             CountResults()
+        //             results.style.display = 'block'
+        //             main.style.display = 'none'
+        //       }
+        // }
+        NextQuest()
 
     })
